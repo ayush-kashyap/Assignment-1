@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Montserrat&family=Lato&family=Lobster&display=swap');
+body{
+    margin: 0;
+    font-family: "Lato";
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    height: 100vh;
+    background: url(/assets/images/Background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.nav-items{
+    text-decoration: none;
+    font-family: "Quicksand";
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    margin-left: 2rem;
+}
+.main-container{
+    scroll-behavior: smooth;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+.main-container::-webkit-scrollbar{
+    display: none;
+}
+.img{
+    height: 400px;
+    box-shadow: 0px 0px 5px 1px #00EAD3;
+    border-radius: 0 1rem 1rem 0;
+    margin: auto;
+}
+.img img{
+    border-radius: 0 1rem 1rem 0;
+}
+.containers{
+    width: 100%;
+    height: 100vh;
+}
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.big{
+    font-family: "Lobster";
+    font-size: 2.5rem;
+}
+
+progress{
+    width: 400px;
+    border: none;
+    height: 1.5rem;
+    position: relative;
+}
+progress::-webkit-progress-bar{
+    background-color: rgb(231, 229, 229);
+    border-radius: 1rem;
+}
+progress::-webkit-progress-value {
+    background: #00EAD3;
+    border-radius: 1rem;
+}
+progress::after{
+    left: 2rem;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 2px;
+    content: attr(value)"%";
+}
+.content-box{
+    text-align: center;
+    width: 70%;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    justify-content: space-evenly;
+}
+.card{
+    position: relative;
+    height: 45vh;
+    width: 220px;
+    margin: auto;
+    text-align: center;
+    border-radius: 1rem 3rem 1rem 1rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.181);
+    background-color: white;
+    transition: all linear 300ms;
+}
+#project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: 700;
+    border-radius: 1rem;
+    letter-spacing: 0.5px;
+    margin: 8px 2rem;
+    background-color: #00ead388;
+    padding: 0.5rem 1rem;
+}
+.card p{
+    width: 80%;
+    margin: auto;
+}
+.card:hover{
+    border-radius: 1rem;
+    transform: scale(1.1) translateX(1rem) translateY(4px);
+}
+#contact{
+    
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contact h1{
+    margin :auto;
+}
+#contact a{
+    text-decoration: none;
+    color: #00EAD3;
+    margin: 0 5rem;
+    font-size: 1.2rem;
+}
+#linkedin:hover{
+    color: #0077b5;
+}
+#twitter:hover{
+    color: #1DA1F2;
+}
+#insta:hover{
+    color: #E1306C;
+}
+#mail:hover{
+    color: #D44638;
+}
+#github:hover{
+    color: #333;
+}
+#phone:hover{
+    color: #075e54;
+}
+#whatsapp:hover{
+    color: #25d366;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+#personal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    padding: 1rem 2rem;
+    text-align: left;
+}
+.error{
+    position: absolute;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+@media screen and (max-width: 800px){
+    .error{
+        display: flex;
+    }
+}
