@@ -183,7 +183,7 @@ td, th{
     text-align: left;
 }
 .error{
-    position: absolute;
+    position: fixed;
     top: 0;
     display: none;
     flex-direction: column;
